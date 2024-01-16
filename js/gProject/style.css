@@ -25,4 +25,8 @@ body{
     position: absolute;
     display: flex;
     justify-content: space-between;
+    right: 5%;
+}
+#main_frame{
+	transform-origin: 0 0;	
 }
