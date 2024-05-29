@@ -1,0 +1,34 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, p, button {
+    margin: 0;
+    padding: 0;
+}
+*, :after, :before, ::after, ::before {
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body{
+    margin: 0;
+}
+a, button, input {
+    border-color: transparent;
+}
+a:link, a:active, a:visited {
+    text-decoration: none;
+    color: #000;
+}
+img {
+    vertical-align: top;
+    width: auto;
+    max-width: 100%;
+}
+img, fieldset, iframe, button {
+    border: 0 none;
+}
+li {
+    list-style: none;
+}
+i, em, address {
+    font-style: normal;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국공학대학교 졸업 작품 아카이브</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/main_content.css">
+</head>
+<body>
+    <header>
+        <div class="head_container">
+            <div class="head_wrap_2">
+                <!-- 한국공대 로고 위치 -->
+                <div class="head_logo">
+                    <a href="#">
+                        <img src="https://www.tukorea.ac.kr/sites/tukorea/images/common/logo_w.png" alt="한국공학대학교" class="logo_w">
+                    </a>
+                </div>
+            </div>
+            <div class="head_wrap" id="header">
+                <!-- 헤드 메뉴 -->
+                <div class="head_navi">
+                    <nav id="menuUItop" class="menuUItop">
+                        <div class="top_div div_1">
+                            <ul class="ul_1">
+                                <li class="li_1">
+                                    <a href="#" class="a_1">
+                                        <span>DEPARTMENT</span>
+                                    </a>
+                                </li>
+                                <li class="li_1">
+                                    <a href="#" class="a_1">
+                                        <span>BEST</span>
+                                    </a>
+                                </li>
+                                <li class="li_1">
+                                    <a href="#" class="a_1">
+                                        <span>AWARD</span>
+                                    </a>
+                                </li>
+                                <li class="li_1">
+                                    <a href="#" class="a_1">
+                                        <span>HISTORY</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="bContents">
+        <div id="contentsEditHtml">
+            <article class="_contentBuilder">
+                <div class="multipleDiv _selDiv" id="multipleDiv_tukorea_26">
+                    <div class="multipleContentsDiv clear-fix" id="multipleContentsDiv_tukorea_26">
+                        <div class="_obj _objHtml _absolute aos-init aos-animate" id="menu1004_obj842">
+                            <div class="slick-slide">
+                                <div style="width: 100%; display: inline-block;">
+                                    <video id="mainVisualAvi" autoplay muted playsinline loop> 
+                                        <source src="https://www.tukorea.ac.kr/sites/tukorea/videos/tino.mp4" type="video/mp4" alt="티노의 하루"> 
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="multipleDiv" id="multipleDiv_titleArea">
+                    <div class="multipleContentsDiv clear-fix" id="multipleContentsDiv_titleArea">
+                        <div class="title_wrap" data-aos="fade-up">
+                            <h1 class="title_txt mainTitle">
+                                <span class="span_1">TU</span> <span class="span_2">Korea</span> <span class="span_3">Graduation Works</span> <span class="span_4">Archive</span>
+                            </h1>
+                        </div>
+                        <div class="title_under_wrap" data-aos="fade-up">
+                            <div class="wrap_kTitle">
+                                <p><span>한국공학대학교</span> 졸업 작품 <i>아카이브</i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        $(function(){
+            // 스크롤 시 header fade-in
+            $(document).on('scroll', function(){
+                if($(window).scrollTop() > 100){
+                    $("#header").removeClass("head_wrap");
+                    $("#header").addClass("active");
+                    $(".a_1").addClass("fix_head");
+                }else{
+                    $("#header").removeClass("active");
+                    $("#header").addClass("head_wrap");
+                    $(".a_1").removeClass("fix_head");
+                }
+            })
+        });
+    </script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+       AOS.init();
+     </script>
+</body>
+</html>

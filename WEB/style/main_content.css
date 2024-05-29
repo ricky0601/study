@@ -1,0 +1,145 @@
+.multipleContentsDiv, .multipleDiv {
+    position: relative;
+}
+._contentBuilder {
+    position: relative;
+}
+#multipleDiv_tukorea_26 {
+    height: auto;
+}
+#multipleContentsDiv_tukorea_26 {
+    max-width: 100%;
+}
+#multipleContentsDiv_tukorea_26 {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+}
+#menu1004_obj842 {
+    width: auto;
+    height: 1100px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+#menu1004_obj842 video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+._obj {
+    overflow: hidden;
+    position: relative;
+}
+.slick-slide{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    width: 2000px;
+    display: block;
+}
+
+#multipleDiv_titleArea{
+    height: auto;
+    padding: 90px 0;
+}
+#multipleDiv_titleArea::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 215px;
+    background: #265aa6;
+
+}
+.multipleContentsDiv {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+#multipleContentsDiv_titleArea{
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+}
+#multipleContentsDiv_titleArea::before{
+    left: -90px;
+}
+#multipleContentsDiv_titleArea::after{
+    right: 90px;
+}
+#multipleContentsDiv_titleArea::before, #multipleContentsDiv_titleArea::before{
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    position: absolute;
+    top: 118px;
+    background: #265aa6;
+}
+
+.title_wrap {
+    width: auto;
+    height: auto;
+    margin: 0px;
+}
+
+.title_under_wrap{
+    display: flex;
+    width: auto;
+    height: 170px;
+    margin: 0px;
+}
+
+.wrap_kTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrap_kTitle p {
+    font-size: 35px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #265aa6;
+    background: #FFF;
+    padding: 0 10px;
+    word-break: keep-all;
+}
+
+.wrap_kTitle p span {
+    font-weight: 700;
+    color: #009FB6;
+}
+.wrap_kTitle p i {
+    font-weight: 700;
+    color: #0091d3;
+}
+.mainTitle {
+    line-height: 1 !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: #2759a5;
+    margin-bottom: 50px;
+}
+.title_txt {
+    font-size: 40px;
+    margin-bottom: 0;
+}
+.mainTitle .span_1 {
+    font-weight: 900;
+}
+.mainTitle .span_2 {
+    font-weight: 600;
+}
+.mainTitle .span_3 {
+    font-weight: 400;
+}
+.mainTitle .span_4 {
+    font-weight: 300;
+    color: #2759a5;
+}
