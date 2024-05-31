@@ -2,6 +2,19 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, p, bu
     margin: 0;
     padding: 0;
 }
+html, body {
+    overflow: visible;
+    width: 100%;
+    height: 100%;
+    font-family: Pretendard;
+    /* font-family: 'Noto Sans KR', sans-serif; */
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 18px;
+    color: #000;
+    letter-spacing: -0.5px;
+    word-wrap: break-word;
+}
 *, :after, :before, ::after, ::before {
     box-sizing: border-box;
     -webkit-text-size-adjust: 100%;

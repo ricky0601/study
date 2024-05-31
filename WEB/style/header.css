@@ -189,7 +189,7 @@ header {
 
 @media (min-width: 1281px) {
     .head_navi nav .li_1 .navGab::after {
-        content: "대학/대학원";
+        content: "대학";
     }
 }
 
@@ -222,6 +222,13 @@ header {
     .head_navi nav .li_2 {
         display: flex;
         align-items: center;
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 1281px) {
+    .head_navi nav .li_2:last-child {
+        margin-bottom: 20px;
     }
 }
 

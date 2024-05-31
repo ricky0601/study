@@ -143,3 +143,24 @@
     font-weight: 300;
     color: #2759a5;
 }
+
+.wrap_calendar{padding: 90px 0;
+    background: url("https://www.tukorea.ac.kr/sites/tukorea/images/main/sns_bg.jpg") no-repeat center bottom;
+    background-size: cover;
+}
+.marquee-wrap{
+    width: 100%;
+    position: relative;
+}
+.marquee-wrap .marquee{
+    left: 0;
+    position: absolute;
+}
+.marquee-wrap ul{
+    display: flex;
+    gap: 44px;
+}
+.marquee-wrap ul li a{
+    display: block;
+    width: 240px;
+}

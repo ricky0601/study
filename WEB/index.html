@@ -16,7 +16,7 @@
             <div class="head_wrap_2">
                 <!-- 한국공대 로고 위치 -->
                 <div class="head_logo">
-                    <a href="#">
+                    <a href="index.html">
                         <img src="https://www.tukorea.ac.kr/sites/tukorea/images/common/logo_w.png" alt="한국공학대학교" class="logo_w">
                         <img src="https://www.tukorea.ac.kr/sites/tukorea/images/common/logo_c.png" alt="한국공학대학교" class="logo_c">
                     </a>
@@ -37,7 +37,7 @@
                                             <li class="li_2">
                                                 <a href="#" class="a_2" target="_blank">
                                                     <span>
-                                                        대학      SW대학
+                                                        대학&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SW대학
                                                     </span>
                                                 </a>
                                                 <div class="div_3">
@@ -66,7 +66,75 @@
                                                 </div>
                                             </li>
                                             <li class="li_2">
-
+                                                <a href="#" class="a_2" target="_blank">
+                                                    <span>
+                                                        학과(학부)
+                                                    </span>
+                                                </a>
+                                                <div class="div_3">
+                                                    <ul class="ul_3">
+                                                        <li class="li_3">
+                                                            <a href="#" class="a_3 new_win">
+                                                                <span>기계공학과</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="li_3">
+                                                            <a href="#" class="a_3 new_win">
+                                                                <span>기계설계공학부(기계설계전공·지능형모빌리티전공)</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="li_3">
+                                                            <a href="#" class="a_3 new_win">
+                                                                <span>메카트로닉스공학부(메카트로닉스전공·AI로봇전공)</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="li_3">
+                                                            <a href="#" class="a_3 new_win">
+                                                                <span>전자공학부(전자공학전공·임베디드시스템전공)</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="li_3">
+                                                            <a href="#" class="a_3 new_win">
+                                                                <span>신소재공학과</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="li_3">
+                                                            <a href="#" class="a_3 new_win">
+                                                                <span>생명화학공학과</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="li_3">
+                                                            <a href="#" class="a_3 new_win">
+                                                                <span>나노반도체공학과</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="li_3">
+                                                            <a href="#" class="a_3 new_win">
+                                                                <span>에너지ㆍ전기공학과</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="li_3">
+                                                            <a href="#" class="a_3 new_win">
+                                                                <span>경영학부(경영학전공·데이터사이언스경영전공·IT경영전공)</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="li_3">
+                                                            <a href="#" class="a_3 new_win">
+                                                                <span>디자인공학부(산업디자인공학전공·미디어디자인공학전공)</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="li_3">
+                                                            <a href="#" class="a_3 new_win">
+                                                                <span>글로벌융합공학과</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="li_3">
+                                                            <a href="#" class="a_3 new_win">
+                                                                <span>지식융합학부</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </li>
                                         </ul>
                                         <span class="navGab"></span>
@@ -124,50 +192,54 @@
                         </div>
                     </div>
                 </div>
+                <div class="marquee-wrap">
+                    <marquee class="marquee">
+                        <ul>
+                            <li>
+                                <a href="#">1</a>
+                            </li>
+                            <li>
+                                <a href="#">2</a>
+                            </li>
+                            <li>
+                                <a href="#">3</a>
+                            </li>
+                            <li>
+                                <a href="#">4</a>
+                            </li>
+                            <li>
+                                <a href="#">5</a>
+                            </li>
+                            <li>
+                                <a href="#">6</a>
+                            </li>
+                            <li>
+                                <a href="#">7</a>
+                            </li>
+                            <li>
+                                <a href="#">8</a>
+                            </li>
+                        </ul>
+                    </marquee>
+                </div>
+            </article>
+            <article>
+                <div class="wrap_calendar">
+                    <div id="calendar" style="max-width: 1400px; background-color: white; margin: 0 auto; padding: 12px;" data-aos="fade-up"></div>
+                </div>
             </article>
         </div>
     </main>
     <footer>
 
     </footer>
-    <script>
-        $('.ul_1 > .li_drop').on('click', function() {
-            var $dropMenu = $(this).children('.drop_menu');
-            if ($dropMenu.is(':visible')) {
-                $dropMenu.stop().slideUp(200);
-            } else {
-                $dropMenu.stop().slideDown(200);
-                $(".head_container").addClass("change_header");
-                $(".a_1").addClass("a_1_1");
-                $(".logo_c").
-            }
-        });
-
-        $('.ul_1 > .li_drop').on('mouseleave', function() {
-            var $dropMenu = $(this).children('.drop_menu');
-            $dropMenu.stop().slideUp(200);
-                $(".head_container").removeClass("change_header");
-                $(".a_1").removeClass("a_1_1");
-        });
-
-        $(function(){
-            // 스크롤 시 header fade-in
-            $(document).on('scroll', function(){
-                if($(window).scrollTop() > 100){
-                    $("#header").removeClass("head_wrap");
-                    $("#header").addClass("active");
-                    $(".a_1").addClass("fix_head");
-                }else{
-                    $("#header").removeClass("active");
-                    $("#header").addClass("head_wrap");
-                    $(".a_1").removeClass("fix_head");
-                }
-            })
-        });
-    </script>
+    <script src="script/header_js.js"></script>
+    <script src="script/calendar.js"></script>
+    <script src="jquery.marquee.js"></script>
      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
      <script>
        AOS.init();
      </script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.13/index.global.min.js"></script>
 </body>
 </html>
