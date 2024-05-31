@@ -5,6 +5,7 @@ header {
     z-index: 2;
     width: 100%;
 }
+
 .head_wrap_2 {
     border-bottom: 1px solid rgba(138, 142, 154, 0.5);
 }
@@ -110,4 +111,229 @@ header {
         transform: translate(0px, -6px);
         transition: all 0.5s cubic-bezier(0.2, 0, 0.3, 1);
     }
+}
+
+@media (min-width: 1281px) {
+    .head_navi nav .drop_menu {
+        display: none;
+        position: absolute;
+        top: 145px;
+        left: 0;
+        width: 100%;
+        background: #f5f5f5;
+    }
+}
+
+@media (min-width: 1281px) {
+    .active .head_navi nav .drop_menu {
+        top: 66px;
+    }
+}
+
+@media (min-width: 1281px) {
+    .head_navi nav .drop_menu::before {
+        content: "";
+        display: block;
+        background: url("https://www.tukorea.ac.kr/sites/tukorea/images/common/mainNav_bg_1.jpg") no-repeat right top;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -1280px;
+        width: 860px;
+        height: 100%;
+    }
+}
+
+@media (min-width: 1281px) {
+    .head_navi nav .li_1 .drop_menu::before {
+        background: url("https://www.tukorea.ac.kr/sites/tukorea/images/common/mainNav_bg_1.jpg") no-repeat right top;
+    }
+}
+
+@media (min-width: 1281px) {
+    .head_navi nav .navGab {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 280px;
+        height: 100%;
+        margin-left: -700px;
+    }
+}
+
+@media (min-width: 1281px) {
+    .head_navi nav .navGab::before, .head_navi nav .navGab::after {
+        display: block;
+        color: #FFF;
+        padding-right: 40px;
+        line-height: 1;
+    }
+}
+
+@media (min-width: 1281px) {
+    .head_navi nav .navGab::before {
+        font-size: 20px;
+        font-weight: 700;
+        padding-top: 40px;
+        content: "TU Korea";
+    }
+}
+
+@media (min-width: 1281px) {
+    .head_navi nav .navGab::after {
+        font-size: 35px;
+        font-weight: 500;
+        padding-top: 10px;
+    }
+}
+
+@media (min-width: 1281px) {
+    .head_navi nav .li_1 .navGab::after {
+        content: "대학/대학원";
+    }
+}
+
+@media (min-width: 1281px) {
+    .head_navi nav .ul_2 {
+        top: 0;
+        left: 50%;
+        min-height: 200px;
+        width: 1200px;
+        margin-left: -420px;
+        position: relative;
+        z-index: 1;
+        padding: 25px 0;
+    }
+}
+
+@media (min-width: 1281px) {
+    .head_navi nav .ul_2::before {
+        content: "";
+        display: block;
+        background: #1557b0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 257px;
+        height: 100%;
+    }
+}
+@media (min-width: 1281px) {
+    .head_navi nav .li_2 {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1281px) {
+    .head_navi nav .a_2 {
+        width: 270px;
+        padding: 10px 40px;
+        color: #FFF;
+        font-size: 17px;
+        position: relative;
+    }
+}
+
+@media (min-width: 1281px) {
+    .head_navi nav .a_2 span {
+        position: relative;
+    }
+}
+
+@media (min-width: 1281px) {
+    .head_navi nav .a_2::before {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 12px;
+        position: absolute;
+        top: 17px;
+        left: 20px;
+        background: url('https://www.tukorea.ac.kr/sites/tukorea/images/common/mainNav_icon_2.png') no-repeat;
+        transform: scale(0);
+    }
+}
+
+@media (min-width: 1281px) {
+    .head_navi nav .li_2:hover .a_2, .head_navi nav .a_2._active {
+        background: #112755;
+    }
+}
+
+@media (min-width: 1281px) {
+    .head_navi nav .li_2:hover .a_2::before, .head_navi nav .a_2._active::before {
+        transform: scale(1);
+        transition: all 0.5s cubic-bezier(0.2, 0, 0.3, 1);
+    }
+}
+
+@media (min-width: 1281px) {
+    .head_navi nav .div_3 {
+        position: relative;
+        width: calc(100% - 245px);
+    }
+}
+
+@media (min-width: 1281px) {
+    .head_navi nav .ul_3 {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+}
+@media (min-width: 1281px) {
+    .head_navi nav .a_3 {
+        display: block;
+        color: #414141;
+        font-size: 16px;
+        font-weight: 300;
+        position: relative;
+        padding: 5px 20px 5px 13px;
+    }
+}
+
+@media (min-width: 1281px) {
+    .head_navi nav .a_3::before {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 10px;
+        background: #c8c8c8;
+        position: absolute;
+        top: calc(50% - 5px);
+        right: 0;
+    }
+}
+
+.head_navi nav .a_3.new_win:after {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: 0;
+    margin-left: 2px;
+    background: url("https://www.tukorea.ac.kr/sites/style_guide/images/common/aLink_3_b.png") no-repeat center;
+    filter: alpha(opacity = 50);
+    opacity: 0.5;
+}
+
+@media (min-width: 1281px) {
+    .head_navi nav .li_3:hover .a_3, .head_navi nav .a_3._active {
+        color: #0d57a7;
+        font-weight: 500;
+    }
+}
+
+.change_header{
+    background: #ffffffe0;
+}
+
+@media (min-width: 1281px) {
+    .head_navi nav .a_1_1 {
+        color: #000000;
+    }
+}
+.head_logo .logo_c {
+    display: none;
 }
