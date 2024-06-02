@@ -152,10 +152,6 @@
     width: 100%;
     position: relative;
 }
-.marquee-wrap .marquee{
-    left: 0;
-    position: absolute;
-}
 .marquee-wrap ul{
     display: flex;
     gap: 44px;
@@ -164,3 +160,43 @@
     display: block;
     width: 240px;
 }
+
+.loop_cont {
+    display: flex;
+    overflow: hidden;
+    height: 108px;
+    align-items: center;
+    margin-bottom: 116px;
+  }
+  .banner {
+    width: 240px;
+    height: 60px;
+    background-color: #009FB6;
+    color: white;
+    margin-right: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .banner_list {
+    display: flex;
+    animation: roll 40s linear infinite;
+  }
+
+  /* 첫 번째 배너 리스트가 끝나면 뒤에 바로 두 번째 배너 리스트가 붙도록 설정 */
+  .n1:last-child {
+    animation-delay: 20s;
+  }
+
+  /* 롤링 애니메이션 정의 */
+  @keyframes roll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }

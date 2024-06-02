@@ -29,7 +29,7 @@ a, button, input {
 }
 a:link, a:active, a:visited {
     text-decoration: none;
-    color: #000;
+    color: unset;
 }
 img {
     vertical-align: top;
