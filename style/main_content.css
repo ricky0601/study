@@ -191,6 +191,148 @@
     animation-delay: 20s;
   }
 
+.wrap_calendar_title{
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 40px;
+    position: relative;
+    margin-bottom: 96px;
+}
+.wrap_calendar_title::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: calc(100% - 50px);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: url("https://www.tukorea.ac.kr/sites/tukorea/fnct/schdulmain/tukorea_miniSche_fixed/images/calendar_bg_2.png");
+}
+
+.scheduleMain {
+    width: 240px;
+    position: relative;
+}
+
+.scheduleControl span {
+    margin: 0 auto;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 161px;
+    height: 185px;
+    background: url("https://www.tukorea.ac.kr/sites/tukorea/fnct/schdulmain/tukorea_miniSche_fixed/images/calendar_bg_1.png") no-repeat center;
+}
+
+.scheduleControl span i.i_1 {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.scheduleControl span i.i_2 {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 5px 0 15px 0;
+}
+
+.scheduleControl span i.i_3 {
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.scheduleControl span i {
+    display: block;
+    color: #FFF;
+}
+
+.scheduleScroll {
+    width: calc(100% - 320px);
+    position: relative;
+}
+
+.scheduleScroll {
+    margin-top: 80px;
+}
+
+.scheduleScroll::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+
+.scheduleScroll ul {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.scheduleScroll li {
+    text-align: center;
+    width: 23%;
+    margin: 0 1%;
+    line-height: 1.25;
+    word-break: keep-all;
+}
+
+.scheduleScroll li::before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background: #95d3e6;
+    margin: 0 auto;
+}
+
+.scheduleScroll li span {
+    font-size: 18px;
+    color: #FFF;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    padding: 20px 0 5px 0;
+}
+
+.scheduleScroll li strong {
+    font-size: 18px;
+    color: #95d3e6;
+    font-weight: 400;
+}
+
+a.view_more_schedule {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 72px;
+}
+._fnctWrap {
+    position: relative;
+    line-height: 1.5;
+}
+
+a.view_more_schedule span {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+a.view_more_schedule span::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 8px;
+    background: url("https://www.tukorea.ac.kr/sites/tukorea/fnct/schdulmain/tukorea_miniSche_fixed/images/more_w.png") right center no-repeat;
+}
   /* 롤링 애니메이션 정의 */
   @keyframes roll {
     0% {
