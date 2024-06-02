@@ -60,11 +60,12 @@ header {
 @media (min-width: 1281px) {
     .head_navi nav .ul_1 {
         display: flex;
+        justify-content: space-between;
     }
 }
 @media (min-width: 1281px) {
     .head_navi nav .li_1 {
-        width: 100%;
+        /*width: 100%;*/
     }
 }
 @media (min-width: 1281px) {
