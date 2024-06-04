@@ -76,7 +76,7 @@ article .obj_title{
 }
 
 .size_list{
-    width: 1400px;
+    max-width: 1400px;
     margin: 0 auto;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -105,21 +105,21 @@ article .obj_title{
     border-radius: 30px;
 }
 
-  .flip-card-inner {
+.flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-  }
+}
   
-  .flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-  }
+}
   
   /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
+.flip-card-front, .flip-card-back {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,32 +129,32 @@ article .obj_title{
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     box-shadow: 0 0 20px 6px #dddddd;
-  }
+}
   
-  .flip-card-front {
+.flip-card-front {
     background: url("https://www.tukorea.ac.kr/sites/biz/fnct/profl/biz_dblank/images/pro_bg.png") no-repeat 28% bottom;
     padding-bottom: 40px;
     
     color: black;
     border-radius: 30px;
-  }
+}
   
-  .flip-card-back {
+.flip-card-back {
     background-color: #008FD3;
     color: white;
     transform: rotateY(180deg);
     border-radius: 30px;
     justify-content: center
-  }
+}
 
 .flip-card-back .wrap_moreButton button{
-  cursor: pointer;
+    cursor: pointer;
 }
 
 /* More Button */
 .wrap_moreButton{
-  position: relative;
-  margin-top: 40px;
+    position: relative;
+    margin-top: 40px;
 }
 
 .wrap_moreButton .btn{

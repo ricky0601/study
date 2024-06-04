@@ -5,7 +5,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, p, bu
 html, body {
     overflow: visible;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     font-family: Pretendard;
     /* font-family: 'Noto Sans KR', sans-serif; */
     font-weight: 300;

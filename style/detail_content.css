@@ -1,0 +1,447 @@
+:root {
+    --color-bg: #FDF1F2;
+    --color-heart: #EA442B;
+    --easing: cubic-bezier(.7,0,.3,1);
+    --duration: .5s;
+}
+
+main{
+    margin-top: 145px;
+    height: 100%;
+}
+
+.wrap_main{
+    width: 1400px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+}
+
+#d_body .wrap_mainDetail{
+    display: flex;
+    position: relative;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#d_body .wrap_main .wrap_mainImg{
+    margin-right: 82px;
+    width: 320px;
+    height: 100%;
+    position: relative;
+}
+
+#d_body .wrap_main .wrap_mainImg:after{
+    content: "";
+    position: absolute;
+    right: -40px;
+    border: 1px solid gray;
+    height: 100%;
+}
+
+#d_body .wrap_mainImg img{
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0px 0 10px gray;
+    transition-duration: 0.3s;
+}
+
+#d_body .wrap_mainImg img:hover{
+    transform: scale(1.05 , 1.05);
+}
+
+#d_body .d_title{
+    font-weight: bold;
+    font-size: 24pt;
+}
+#d_body .d_author{
+    font-weight: bold;
+    margin-top: 8px;
+    font-size: 18pt;
+    color: #7E7E7E;
+}
+#d_body .d_date{
+    font-weight: bold;
+    margin-top: 8px;
+    font-size: 18pt;
+    color: #7E7E7E;
+}
+
+#d_body .wrap_likeButton{
+    position: absolute;
+    bottom: 0;
+    width: 48px;
+    height: 48px;
+}
+
+/* Like Button */
+
+.wrap_likeButton *, .wrap_likeButton *:before, .wrap_likeButton *:after {
+    position: relative;
+}
+
+:root {
+  --color-bg: #FDF1F2;
+  --color-heart: #EA442B;
+  --easing: cubic-bezier(.7,0,.3,1);
+  --duration: .5s;
+}
+
+.like-button {
+  font-size: 35vmin;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  z-index: 2;
+  -webkit-transition: -webkit-transform var(--duration) var(--easing);
+  transition: -webkit-transform var(--duration) var(--easing);
+  transition: transform var(--duration) var(--easing);
+  transition: transform var(--duration) var(--easing), -webkit-transform var(--duration) var(--easing);
+  cursor: pointer;
+}
+.like-button:before {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 014.4px 28.8px rgba(0, 0, 0, 0.3);
+  border-radius: inherit;
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+.like-button:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: inherit;
+  z-index: -1;
+}
+.like-button:active:before {
+  -webkit-animation: depress-shadow var(--duration) var(--easing) both;
+          animation: depress-shadow var(--duration) var(--easing) both;
+}
+.like-button:focus:after {
+  -webkit-animation: depress var(--duration) var(--easing) both;
+          animation: depress var(--duration) var(--easing) both;
+}
+@-webkit-keyframes depress {
+  from, to {
+    -webkit-transform: none;
+            transform: none;
+  }
+  50% {
+    -webkit-transform: translateY(5%) scale(0.9);
+            transform: translateY(5%) scale(0.9);
+  }
+}
+@keyframes depress {
+  from, to {
+    -webkit-transform: none;
+            transform: none;
+  }
+  50% {
+    -webkit-transform: translateY(5%) scale(0.9);
+            transform: translateY(5%) scale(0.9);
+  }
+}
+@-webkit-keyframes depress-shadow {
+  from, to {
+    -webkit-transform: none;
+            transform: none;
+  }
+  50% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
+@keyframes depress-shadow {
+  from, to {
+    -webkit-transform: none;
+            transform: none;
+  }
+  50% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
+.like-wrapper {
+  display: grid;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  z-index: 1;
+}
+.like-wrapper > * {
+  margin: auto;
+  grid-area: 1 / 1;
+}
+
+.heart {
+  width: 24px;
+  height: 24px;
+  display: block;
+  -webkit-transform-origin: center 80%;
+          transform-origin: center 80%;
+}
+.heart > path {
+  stroke: var(--color-heart);
+  stroke-width: 2;
+  fill: transparent;
+  -webkit-transition: fill var(--duration) var(--easing);
+  transition: fill var(--duration) var(--easing);
+}
+.like-button:focus .heart > path {
+  fill: var(--color-heart);
+}
+.like-button:focus .heart {
+  -webkit-animation: heart-bounce var(--duration) var(--easing);
+          animation: heart-bounce var(--duration) var(--easing);
+}
+@-webkit-keyframes heart-bounce {
+  40% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  0%, 80%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes heart-bounce {
+  40% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  0%, 80%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+/* Particles */
+
+.particles {
+  width: 1px;
+  height: 1px;
+}
+
+.particle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4.8px;
+  width: 4.8px;
+  border-radius: 2.4px;
+  background-color: var(--color);
+  --percentage: calc( var(--i) / var(--total-particles) );
+  --Θ: calc( var(--percentage) * 1turn );
+  -webkit-transform: translate(-50%, -50%) rotate(var(--Θ)) translateY(0) scaleY(0);
+          transform: translate(-50%, -50%) rotate(var(--Θ)) translateY(0) scaleY(0);
+  -webkit-transition: all var(--duration) var(--easing);
+  transition: all var(--duration) var(--easing);
+}
+.like-button:focus .particle {
+  -webkit-animation: particles-out calc(var(--duration) * 1.2) var(--easing) forwards;
+          animation: particles-out calc(var(--duration) * 1.2) var(--easing) forwards;
+}
+@-webkit-keyframes particles-out {
+  50% {
+    height: 14.4px;
+  }
+  50%, 60% {
+    height: 14.4px;
+    -webkit-transform: translate(-50%, -50%) rotate(var(--Θ)) translateY(38.4px) scale(1);
+            transform: translate(-50%, -50%) rotate(var(--Θ)) translateY(38.4px) scale(1);
+  }
+  60% {
+    height: 9.6px;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(var(--Θ)) translateY(48px) scale(0);
+            transform: translate(-50%, -50%) rotate(var(--Θ)) translateY(48px) scale(0);
+  }
+}
+@keyframes particles-out {
+  50% {
+    height: 14.4px;
+  }
+  50%, 60% {
+    height: 14.4px;
+    -webkit-transform: translate(-50%, -50%) rotate(var(--Θ)) translateY(38.4px) scale(1);
+            transform: translate(-50%, -50%) rotate(var(--Θ)) translateY(38.4px) scale(1);
+  }
+  60% {
+    height: 9.6px;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(var(--Θ)) translateY(48px) scale(0);
+            transform: translate(-50%, -50%) rotate(var(--Θ)) translateY(48px) scale(0);
+  }
+}
+.ripple {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
+}
+.ripple:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 19.4px solid var(--color-heart);
+  border-radius: inherit;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.like-button:focus .ripple:before {
+  -webkit-animation: ripple-out var(--duration) var(--easing);
+          animation: ripple-out var(--duration) var(--easing);
+}
+@-webkit-keyframes ripple-out {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(5);
+            transform: scale(5);
+  }
+}
+@keyframes ripple-out {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(5);
+            transform: scale(5);
+  }
+}
+/* Button Reset */
+.like-button:focus {
+  pointer-events: none;
+  cursor: normal;
+}
+
+
+/* Description Area */
+
+#d_body .wrap_disc{
+    width: 1400px;
+    margin: 0 auto;
+    padding: 40px 0;
+    position: relative;
+}
+
+#d_body .wrap_disc::before{
+    position: absolute;
+    content: "";
+    border: 1px solid gray;
+    width: 100%;
+    top: 0;
+}
+
+#d_body .wrap_disc::after{
+    position: absolute;
+    content: "";
+    border: 1px solid gray;
+    width: 100%;
+    bottom: 0;
+}
+
+#d_body .disc_txt{
+    font-size: 20pt;
+    font-weight: 500;
+}
+
+.backButton{
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    bottom: 1em;
+    width: 160px;
+    height: 56px;
+}
+
+
+/* Response Design */
+@media (max-width: 1280px) {
+    .wrap_main {
+        max-width: 1280px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 40px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #d_body .wrap_main .wrap_mainImg {
+        margin-right: 0;
+        margin-bottom: 82px;
+        width: 800px;
+        height: 100%;
+        position: relative;
+    }
+
+    #d_body .wrap_main .wrap_mainImg:after {
+        content: "";
+        position: absolute;
+        bottom: -40px;
+        left: 0;
+        border: 1px solid gray;
+        width: 100%;
+        right: 0;
+        height: unset;
+    }
+    #d_body .wrap_mainImg img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        box-shadow: 0px 0 10px gray;
+        transition-duration: 0.3s;
+    }
+    #d_body .wrap_mainDetail {
+        display: flex;
+        position: relative;
+        height: 100%;
+        width: 800px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #d_body .wrap_likeButton {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 48px;
+        height: 48px;
+    }
+    #d_body .wrap_disc {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px 0;
+        position: relative;
+    }
+}

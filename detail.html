@@ -20,14 +20,23 @@
     <title>한국공학대학교 졸업 작품 아카이브</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="style/de_content.css">
+    <link rel="stylesheet" href="style/detail_content.css">
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/footer.css">
 </head>
-<body>
+<body id="d_body">
     <header>
-        <div class="head_container">
+        <div class="head_container active">
+            <div class="head_wrap_2 ">
+                <!-- 한국공대 로고 위치 -->
+                <div class="head_logo">
+                    <a href="index.html">
+                        <img src="https://www.tukorea.ac.kr/sites/tukorea/images/common/logo_w.png" alt="한국공학대학교" class="logo_w" style="display: none;">
+                        <img src="https://www.tukorea.ac.kr/sites/tukorea/images/common/logo_c.png" alt="한국공학대학교" class="logo_c" style="display: inline-block;">
+                    </a>
+                </div>
+            </div>
             <div class="head_wrap" id="header">
                 <!-- 헤드 메뉴 -->
                 <div class="head_navi">
@@ -35,7 +44,7 @@
                         <div class="top_div div_1">
                             <ul class="ul_1">
                                 <li class="li_1 li_drop">
-                                    <a style="cursor: pointer;" class="a_1 fix_head">
+                                    <a style="cursor: pointer;" class="fix_head">
                                         <span>DEPARTMENT</span>
                                     </a>
                                     <div class="drop_menu" id="change_menu" style="display: none;">
@@ -147,17 +156,17 @@
                                     </div>
                                 </li>
                                 <li class="li_1">
-                                    <a href="#" class="a_1">
+                                    <a href="#" class="fix_head">
                                         <span>BEST</span>
                                     </a>
                                 </li>
                                 <li class="li_1">
-                                    <a href="#" class="a_1">
+                                    <a href="#" class="fix_head">
                                         <span>AWARD</span>
                                     </a>
                                 </li>
                                 <li class="li_1">
-                                    <a href="#" class="a_1">
+                                    <a href="#" class="fix_head">
                                         <span>HISTORY</span>
                                     </a>
                                 </li>
@@ -168,8 +177,46 @@
             </div>
         </div>
     </header>
-    <main style="height: 1000px;">
-
+    <main>
+        <div class="wrap_main">
+            <div class="wrap_mainImg">
+                <img src="src/test.jpg" alt="" data-aos="fade-up">
+            </div>
+            <div class="wrap_mainDetail">
+                <p class="d_title" data-aos="fade-up">TITLE</p>
+                <p class="d_author" data-aos="fade-up">AUTHOR</p>
+                <p class="d_date" data-aos="fade-up">DATE</p>
+                <div class="wrap_likeButton">
+                    <button class="like-button" data-aos="fade-up"> 
+                        <div class="like-wrapper">
+                          <div class="ripple"></div>
+                          <svg class="heart" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+                          </svg>
+                          <div class="particles" style="--total-particles: 6">
+                            <div class="particle" style="--i: 1; --color: #7642F0"></div>
+                            <div class="particle" style="--i: 2; --color: #AFD27F"></div>
+                            <div class="particle" style="--i: 3; --color: #DE8F4F"></div>
+                            <div class="particle" style="--i: 4; --color: #D0516B"></div>
+                            <div class="particle" style="--i: 5; --color: #5686F2"></div>
+                            <div class="particle" style="--i: 6; --color: #D53EF3"></div>
+                          </div>
+                        </div>
+                      </button>
+                </div>
+            </div>
+        </div>
+        <div class="wrap_disc" data-aos="fade-up">
+            <p class="disc_txt">DESCRIPTION</p>
+            <p class="disc_txt">DESCRIPTION</p>
+            <p class="disc_txt">DESCRIPTION</p>
+            <p class="disc_txt">DESCRIPTION</p>
+            <button class="backButton">
+                <a href="department.html">
+                    <span>뒤로 가기</span>
+                </a>
+            </button>
+        </div>
     </main>
     <footer>
         <div class="footer_container">
