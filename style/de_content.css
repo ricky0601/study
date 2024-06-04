@@ -1,0 +1,172 @@
+._contentBuilder {
+    position: relative;
+}
+
+article .title_wrap{
+    height: auto;
+}
+
+article .obj_title{
+    height: 100%;
+    overflow: hidden;
+}
+
+.wrap_visual{
+    height: 600px !important;
+}
+
+.black_bg {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bg_area{
+    position: relative;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+}
+.slogan {
+    text-align: center;
+    color: #FFF;
+    word-break: keep-all;
+    line-height: 1.1;
+}
+
+.slogan .p_1 {
+    font-size: 30px;
+    line-height: 1;
+}
+
+.slogan .p_2 {
+    font-size: 50px;
+    font-family: 'Noto Bold';
+    padding-top: 20px;
+}
+
+.slogan .p_3 {
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+
+#menu2014_obj37{
+    position: absolute;
+    top: 35% !important;
+    width: 1600px !important;
+    left: 50% !important;
+    margin-left: -800px !important;
+}
+
+
+.wrap_list{
+    background-color: white;
+}
+
+.flip-card .wrap_info{
+    text-align: left;
+    width: 300px;
+}
+
+.size_list{
+    width: 1400px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.list_title{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Flip-card */
+
+.flip-card {
+    background-color: transparent;
+    width: 386px;
+    height: 612px;
+    perspective: 1000px;
+}
+
+.flip-card img{
+    margin: 24px;
+    border-radius: 30px;
+}
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background: url("https://www.tukorea.ac.kr/sites/biz/fnct/profl/biz_dblank/images/pro_bg.png") no-repeat 28% bottom;
+    padding-bottom: 40px;
+    
+    color: black;
+    border-radius: 30px;
+  }
+  
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 30px;
+  }
+
+  /* Pagination */
+
+  .wrap_paginaition{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 102px;
+    margin-bottom: 87px;
+  }
+  .pagination {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .pagination a {
+    font-size: 20px;
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+  
+  .pagination a.p_active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .pagination a:hover:not(.p_active) {background-color: #ddd;}
