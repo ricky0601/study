@@ -4,7 +4,9 @@
     --easing: cubic-bezier(.7,0,.3,1);
     --duration: .5s;
 }
-
+#d_body{
+  background-color: #fbfbfb;
+}
 main{
     margin-top: 145px;
     height: 100%;
@@ -55,7 +57,14 @@ main{
 
 #d_body .d_title{
     font-weight: bold;
-    font-size: 24pt;
+    font-size: 1.6em;
+}
+
+@media (max-width: 1280px) {
+  #d_body .d_title {
+    font-weight: bold;
+    font-size: 1.3em;
+  }
 }
 #d_body .d_author{
     font-weight: bold;
@@ -75,6 +84,79 @@ main{
     bottom: 0;
     width: 48px;
     height: 48px;
+}
+
+.wrap_moreButton .btn{
+  background: rgb(0,172,238);
+  background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+  width: 240px;
+  height: 60px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  color: black;
+}
+.btn span {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.btn:before,
+.btn:after {
+position: absolute;
+content: "";
+right: 0;
+top: 0;
+ background: black;
+transition: all 0.3s ease;
+}
+.btn:before {
+height: 0%;
+width: 2px;
+}
+.btn:after {
+width: 0%;
+height: 2px;
+}
+.btn:hover{
+ background: transparent;
+box-shadow: none;
+}
+.btn:hover:before {
+height: 100%;
+}
+.btn:hover:after {
+width: 100%;
+}
+.btn span:hover{
+ color: black;
+}
+.btn span:before,
+.btn span:after {
+position: absolute;
+content: "";
+left: 0;
+bottom: 0;
+ background: black;
+transition: all 0.3s ease;
+}
+.btn span:before {
+width: 2px;
+height: 0%;
+}
+.btn span:after {
+width: 0%;
+height: 2px;
+}
+.btn span:hover:before {
+height: 100%;
+}
+.btn span:hover:after {
+width: 100%;
 }
 
 /* Like Button */
@@ -353,6 +435,7 @@ main{
     width: 1400px;
     margin: 0 auto;
     padding: 40px 0;
+    padding-bottom: 100px;
     position: relative;
 }
 
@@ -364,19 +447,29 @@ main{
     top: 0;
 }
 
-#d_body .wrap_disc::after{
-    position: absolute;
-    content: "";
-    border: 1px solid gray;
-    width: 100%;
-    bottom: 0;
-}
-
 #d_body .disc_txt{
     font-size: 20pt;
-    font-weight: 500;
+    font-weight: 300;
 }
 
+@media(max-width: 1280px){
+  #d_body .disc_txt {
+    font-size: 1em;
+    font-weight: 300;
+  }
+  #d_body .d_author {
+    font-weight: bold;
+    margin-top: 8px;
+    font-size: 1.2em;
+    color: #7E7E7E;
+}
+  #d_body .d_date {
+    font-weight: bold;
+    margin-top: 8px;
+    font-size: 1.2em;
+    color: #7E7E7E;
+  }
+}
 .backButton{
     cursor: pointer;
     position: absolute;
@@ -384,13 +477,79 @@ main{
     bottom: 1em;
     width: 160px;
     height: 56px;
+    border-radius: 1.3em;
+    box-shadow: 2px 2px 5px 0px gray;
+    transition-duration: 1s;
 }
 
+.backButton:hover{
+  transform: scale(1.05, 1.05);
+  box-shadow: 2px 2px 5px 1px gray;
+  transition-duration: 1s;
+}
 
+@media (min-width: 1281px) {
+
+  /* Comment Area */
+
+  #d_body .wrap_commentArea{
+      width: 1400px;
+      margin: 0 auto;
+      margin-top: 80px;
+      margin-bottom: 80px;
+  }
+
+  .wrap_commentArea .wrap_comments{
+    width: 100%;
+    height: 100%;
+  }
+
+  .wrap_comments ul {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .wrap_comments ul li .comment_box{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    min-height: 180px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .35s;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
+    align-items: center;
+  }
+  .wrap_comments ul li .comment_box:hover {
+    transform: translate(0px, -2px) !important;
+    box-shadow: 0 15px 45px -10px rgba(10, 16, 34, 0.2);
+  }
+
+  .wrap_comments .userInfo_area{
+    width: 30%;
+    height: 100%;
+    display: flex;
+  }
+
+  .userInfo_area .wrap_thumbImg{
+    width: 40%;
+    height: 100%;
+  }
+
+  .userInfo_area .wrap_userInfo{
+    width: 100%;
+    height: 100%;
+  }
+}
 /* Response Design */
 @media (max-width: 1280px) {
     .wrap_main {
-        max-width: 1280px;
+        max-width: 100%;  
         height: 100%;
         margin: 0 auto;
         padding: 40px 0;
@@ -442,6 +601,123 @@ main{
         max-width: 800px;
         margin: 0 auto;
         padding: 40px 0;
+        padding-bottom: 80px;
         position: relative;
     }
+      /* Comment Area */
+
+    #d_body .wrap_commentArea{
+      width: 800px;
+      margin: 0 auto;
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+
+    .wrap_commentArea .wrap_comments{
+      width: 100%;
+      height: 100%;
+    }
+
+    .wrap_comments ul {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .wrap_comments ul li .comment_box{
+      width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        min-height: 180px;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .35s;
+        background-color: #fff;
+        box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
+    }
+    .wrap_comments ul li .comment_box:hover {
+      transform: translate(0px, -2px) !important;
+      box-shadow: 0 15px 45px -10px rgba(10, 16, 34, 0.2);
+    }
+
+    .wrap_comments .userInfo_area{
+      width: 30%;
+      height: 100%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px){ /* iPad Pro */
+  main {
+    margin-top: 145px;
+    height: 100%;
+    margin: 0 20px;
+    margin-top: 145px;
+  }
+  #d_body .wrap_main .wrap_mainImg {
+    margin-right: 0;
+    margin-bottom: 82px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  #d_body .wrap_mainDetail {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .wrap_main {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      padding: 40px 0;
+      display: flex;
+      flex-direction: column;
+  }
+  #d_body .wrap_disc {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 40px 0;
+      padding-bottom: 80px;
+      position: relative;
+  }
+}
+
+@media(max-width: 414px){ /* iPhone 12 Pro */
+  .wrap_main {
+    max-width: 380px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    }
+    #d_body .wrap_mainDetail {
+      display: flex;
+      position: relative;
+      height: 100%;
+      width: 380px;
+      flex-direction: column;
+      justify-content: center;
+  }
+  #d_body .wrap_main .wrap_mainImg {
+    margin-right: 0;
+    margin-bottom: 82px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  #d_body .wrap_disc {
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 40px 0;
+    padding-bottom: 80px;
+    position: relative;
+}
 }

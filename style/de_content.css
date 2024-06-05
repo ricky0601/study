@@ -87,6 +87,13 @@ article .obj_title{
     font-weight: bold;
 }
 
+.flip-card-back .list_title{
+    height: 20em;
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .list_author , .list_date{
   margin-top: 20px;
 }

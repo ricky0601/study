@@ -1,0 +1,45 @@
+#visual .wrap_backImg > .backImg_area {
+    display: none;
+    height: 600px;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+#visual .wrap_backImg > .backImg_area {
+    display: block;
+    background: url("https://iphak.tukorea.ac.kr/img/main_re/visual_03.jpg") center 0 no-repeat;
+    background-size: cover;
+}
+.center_align {
+    position: relative;
+    max-width: 1400px;
+    width: 1400px;
+    margin: 0 auto;
+    padding-top: 154px;
+}
+.center_align {
+    width: auto;
+}
+
+#visual .wrap_backImg > .backImg_area h2 {
+    font-size: 3em;
+    padding-top: 1em;
+    color: white;
+}
+
+.wrap_year{
+    height: 100%;
+}
+.wrap_year h2{
+    width: 1400px;
+    margin: 0 auto;
+}
+
+article:nth-child(2n+1) h2{
+    text-align: right;
+}
+
+.test{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(180, 180, 180);
+}

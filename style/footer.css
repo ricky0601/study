@@ -79,3 +79,164 @@ footer .footer_container {
 .foot_sns a {
     margin-left: 3px;
 }
+
+/* Responsive */
+
+@media(min-width: 1025px){
+
+}
+
+@media (min-width: 601px) and (max-width: 1024px){
+    footer {
+        background: #1b2b43;
+        padding: 50px 20px; /* 패딩을 조정하여 작은 화면에서도 여백이 적절하도록 */
+        word-break: keep-all;
+        position: relative;
+    }
+    
+    footer .footer_container {
+        max-width: 100%;
+        margin: 0 auto;
+        position: relative;
+        padding-bottom: 240px;
+    }
+    
+    .fnb {
+        display: flex;
+        flex-direction: column; /* 모바일에서는 세로 정렬 */
+        align-items: flex-start; /* 왼쪽 정렬 */
+        right: unset;
+    }
+    .fnb a {
+        color: #BBB;
+        font-size: 15px;
+        font-weight: 300;
+        margin-bottom: 10px; /* 링크 사이에 여백 추가 */
+    }
+    .fnb a.a_1 {
+        color: #8baddc;
+    }
+    
+    .fnb a:not(:first-child)::before {
+        content: "";
+        display: none; /* 모바일에서는 구분선 제거 */
+    }
+    
+    .foot_address {
+        font-weight: 300;
+        color: #BBB;
+        font-size: 16px;
+    }
+    
+    .foot_address address {
+        margin-top: 20px;
+    }
+    
+    .foot_address div {
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .foot_address span {
+        margin-right: 20px;
+    }
+    
+    .foot_address a {
+        color: #BBB;
+        display: inline-block;
+    }
+    
+    .foot_address p {
+        font-size: 13px;
+    }
+    
+    .foot_sns {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 20px;
+        top: unset;
+    }
+    
+    .foot_sns a {
+        margin-left: 10px; /* 링크 사이에 여백 추가 */
+    }
+}
+
+@media(max-width: 600px){
+    footer {
+        background: #1b2b43;
+        padding: 50px 20px; /* 패딩을 조정하여 작은 화면에서도 여백이 적절하도록 */
+        word-break: keep-all;
+        position: relative;
+    }
+    
+    footer .footer_container {
+        max-width: 100%;
+        margin: 0 auto;
+        position: relative;
+        padding-bottom: 240px;
+    }
+    
+    .fnb {
+        display: flex;
+        flex-direction: column; /* 모바일에서는 세로 정렬 */
+        align-items: flex-start; /* 왼쪽 정렬 */
+        right: unset;
+    }
+    .fnb a {
+        color: #BBB;
+        font-size: 15px;
+        font-weight: 300;
+        margin-bottom: 10px; /* 링크 사이에 여백 추가 */
+    }
+    .fnb a.a_1 {
+        color: #8baddc;
+    }
+    
+    .fnb a:not(:first-child)::before {
+        content: "";
+        display: none; /* 모바일에서는 구분선 제거 */
+    }
+    
+    .foot_address {
+        font-weight: 300;
+        color: #BBB;
+        font-size: 16px;
+    }
+    
+    .foot_address address {
+        margin-top: 20px;
+    }
+    
+    .foot_address div {
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .foot_address span {
+        margin-right: 20px;
+    }
+    
+    .foot_address a {
+        color: #BBB;
+        display: inline-block;
+    }
+    
+    .foot_address p {
+        font-size: 13px;
+    }
+    
+    .foot_sns {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 20px;
+        top: unset;
+    }
+    
+    .foot_sns a {
+        margin-left: 10px; /* 링크 사이에 여백 추가 */
+    }
+    
+}
