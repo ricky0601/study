@@ -15,6 +15,9 @@ html, body {
     letter-spacing: -0.5px;
     word-wrap: break-word;
 }
+body{
+    overflow-x: hidden;
+}
 *, :after, :before, ::after, ::before {
     box-sizing: border-box;
     -webkit-text-size-adjust: 100%;

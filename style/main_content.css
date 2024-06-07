@@ -342,3 +342,21 @@ a.view_more_schedule span::after {
       transform: translateX(-100%);
     }
   }
+
+@media(min-width: 1025px){
+
+}
+
+@media (min-width: 601px) and (max-width: 1024px){ /* iPad Pro */
+    #menu1004_obj842 {
+        width: auto;
+        height: 500px;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 414px){ /* iPhone 12 Pro */
+
+}

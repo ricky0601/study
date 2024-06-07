@@ -34,9 +34,11 @@ header {
         top: 0;
         left: 0;
         width: 100%;
-        background: #ffffffe0;
+        /* background: #ffffffe0; */
         transition-delay: 0.2s;
         transition-duration: 0.2s;
+        backdrop-filter: blur(15px);
+        background-color: hsl(0deg 8% 42% / 3%);
       }
 
     #d_body .active{

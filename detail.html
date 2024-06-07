@@ -24,16 +24,17 @@
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/footer.css">
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
 </head>
 <body id="d_body">
     <header>
-        <div class="head_container">
+        <div class="head_container active">
             <div class="head_wrap_2">
                 <!-- 한국공대 로고 위치 -->
                 <div class="head_logo">
                     <a href="index.html">
-                        <img src="https://www.tukorea.ac.kr/sites/tukorea/images/common/logo_w.png" alt="한국공학대학교" class="logo_w">
-                        <img src="https://www.tukorea.ac.kr/sites/tukorea/images/common/logo_c.png" alt="한국공학대학교" class="logo_c">
+                        <img src="https://www.tukorea.ac.kr/sites/tukorea/images/common/logo_w.png" alt="한국공학대학교" class="logo_w" style="display: none;">
+                        <img src="https://www.tukorea.ac.kr/sites/tukorea/images/common/logo_c.png" alt="한국공학대학교" class="logo_c" style="display: inline-block;">
                     </a>
                 </div>
             </div>
@@ -44,7 +45,7 @@
                         <div class="top_div div_1">
                             <ul class="ul_1">
                                 <li class="li_1 li_drop">
-                                    <a style="cursor: pointer;" class="a_1">
+                                    <a style="cursor: pointer;" class="fix_head">
                                         <span>DEPARTMENT</span>
                                     </a>
                                     <div class="drop_menu" id="change_menu" style="display: none;">
@@ -156,17 +157,17 @@
                                     </div>
                                 </li>
                                 <li class="li_1">
-                                    <a href="#" class="a_1">
+                                    <a href="best.html" class="fix_head">
                                         <span>BEST</span>
                                     </a>
                                 </li>
                                 <li class="li_1">
-                                    <a href="award.html" class="a_1">
+                                    <a href="award.html" class="fix_head">
                                         <span>AWARD</span>
                                     </a>
                                 </li>
                                 <li class="li_1">
-                                    <a href="#" class="a_1">
+                                    <a href="https://expo.tukorea.ac.kr/" class="fix_head">
                                         <span>HISTORY</span>
                                     </a>
                                 </li>
@@ -250,6 +251,7 @@
     <script src="script/header2_js.js"></script>
     <script src="script/calendar.js"></script>
     <script src="jquery.marquee.js"></script>
+    <script src="script/lenis.js"></script>
      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
      <script>
        AOS.init();
