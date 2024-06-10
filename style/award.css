@@ -1,6 +1,6 @@
 #visual .wrap_backImg > .backImg_area {
     display: none;
-    height: 600px;
+    height: 800px;
     -webkit-background-size: cover;
     background-size: cover;
 }
@@ -14,7 +14,7 @@
     max-width: 1400px;
     width: 1400px;
     margin: 0 auto;
-    padding-top: 154px;
+    padding-top: 12em;
 }
 
 @media (min-width: 601px) and (max-width: 1024px){
