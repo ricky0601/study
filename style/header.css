@@ -5,7 +5,6 @@ header {
     z-index: 2000;
     width: 100%;
 }
-
 .head_wrap_2 {
     border-bottom: 1px solid rgba(138, 142, 154, 0.5);
 }
@@ -20,13 +19,12 @@ header {
     .head_navi {
         max-width: 1400px;
         margin: 0 auto;
-    }
+   }
 }
-
 @media (min-width: 1281px) {
     .head_navi, .head_navi nav, .head_navi nav .div_1, .head_navi nav .ul_1, .head_navi nav .li_1, .head_navi nav .a_1 {
         height: 100%;
-    }
+   }
 }
 @media (min-width: 1281px) {
     .active{
@@ -34,20 +32,20 @@ header {
         top: 0;
         left: 0;
         width: 100%;
-        /* background: #ffffffe0; */
+       /* background: #ffffffe0;
+        */
         transition-delay: 0.2s;
         transition-duration: 0.2s;
         backdrop-filter: blur(15px);
         background-color: hsl(0deg 8% 42% / 3%);
-      }
-
+   }
     #d_body .active{
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         background: white;
-    }
+   }
 }
 @media (max-width: 1280px) {
     .head_navi {
@@ -59,24 +57,24 @@ header {
         height: 100%;
         overflow-y: auto;
         z-index: 1;
-    }
+   }
 }
-
 @media (min-width: 1281px) {
     .head_navi nav .div_1 {
         height: 100%;
-    }
+   }
 }
 @media (min-width: 1281px) {
     .head_navi nav .ul_1 {
         display: flex;
         justify-content: space-between;
-    }
+   }
 }
 @media (min-width: 1281px) {
     .head_navi nav .li_1 {
-        /*width: 100%;*/
-    }
+       /*width: 100%;
+       */
+   }
 }
 @media (min-width: 1281px) {
     .head_navi nav .a_1 {
@@ -88,8 +86,9 @@ header {
         font-weight: 400;
         font-size: 20px;
         padding: 15px 0;
-    }
-}@media (min-width: 1281px) {
+   }
+}
+@media (min-width: 1281px) {
     .head_navi nav .fix_head {
         display: flex;
         justify-content: center;
@@ -99,21 +98,21 @@ header {
         font-weight: 400;
         font-size: 20px;
         padding: 15px 0;
-    }
+   }
 }
 @media (min-width: 1281px) {
     .head_navi nav .a_1 span {
         position: relative;
         display: inline-block;
-    }
+   }
 }
 @media (min-width: 1281px) {
     .head_navi nav .li_1:hover .a_1 span::after, .head_navi nav .a_1.active span::after {
         background: rgba(0, 185, 255, 0.2);
-    }
+   }
     #d_body .head_navi nav .li_1:hover .fix_head span::after{
         background: rgba(0, 185, 255, 0.2);
-    }
+   }
 }
 @media (min-width: 1281px) {
     .head_navi nav .a_1 span::after {
@@ -124,7 +123,7 @@ header {
         background: transparent;
         transform: translate(0px, -6px);
         transition: all 0.5s cubic-bezier(0.2, 0, 0.3, 1);
-    }
+   }
     #d_body .head_navi nav .fix_head span::after {
         content: "";
         display: block;
@@ -133,9 +132,8 @@ header {
         background: transparent;
         transform: translate(0px, -6px);
         transition: all 0.5s cubic-bezier(0.2, 0, 0.3, 1);
-    }
+   }
 }
-
 @media (min-width: 1281px) {
     .head_navi nav .drop_menu {
         display: none;
@@ -144,19 +142,16 @@ header {
         left: 0;
         width: 100%;
         background: #f5f5f5;
-    }
+   }
 }
-
 @media (min-width: 1281px) {
     .active .head_navi nav .drop_menu {
         top: 68px;
-    }
-
+   }
     #d_body .active .head_navi nav .drop_menu {
         top: 145px;
-    }
+   }
 }
-
 @media (min-width: 1281px) {
     .head_navi nav .drop_menu::before {
         content: "";
@@ -168,15 +163,13 @@ header {
         margin-left: -1280px;
         width: 860px;
         height: 100%;
-    }
+   }
 }
-
 @media (min-width: 1281px) {
     .head_navi nav .li_1 .drop_menu::before {
         background: url("https://www.tukorea.ac.kr/sites/tukorea/images/common/mainNav_bg_1.jpg") no-repeat right top;
-    }
+   }
 }
-
 @media (min-width: 1281px) {
     .head_navi nav .navGab {
         position: absolute;
@@ -185,41 +178,36 @@ header {
         width: 280px;
         height: 100%;
         margin-left: -700px;
-    }
+   }
 }
-
 @media (min-width: 1281px) {
     .head_navi nav .navGab::before, .head_navi nav .navGab::after {
         display: block;
         color: #FFF;
         padding-right: 40px;
         line-height: 1;
-    }
+   }
 }
-
 @media (min-width: 1281px) {
     .head_navi nav .navGab::before {
         font-size: 20px;
         font-weight: 700;
         padding-top: 40px;
         content: "TU Korea";
-    }
+   }
 }
-
 @media (min-width: 1281px) {
     .head_navi nav .navGab::after {
         font-size: 35px;
         font-weight: 500;
         padding-top: 10px;
-    }
+   }
 }
-
 @media (min-width: 1281px) {
     .head_navi nav .li_1 .navGab::after {
         content: "대학";
-    }
+   }
 }
-
 @media (min-width: 1281px) {
     .head_navi nav .ul_2 {
         top: 0;
@@ -230,9 +218,8 @@ header {
         position: relative;
         z-index: 1;
         padding: 25px 0;
-    }
+   }
 }
-
 @media (min-width: 1281px) {
     .head_navi nav .ul_2::before {
         content: "";
@@ -243,22 +230,20 @@ header {
         left: 0;
         width: 257px;
         height: 100%;
-    }
+   }
 }
 @media (min-width: 1281px) {
     .head_navi nav .li_2 {
         display: flex;
         align-items: center;
         margin-bottom: 40px;
-    }
+   }
 }
-
 @media (min-width: 1281px) {
     .head_navi nav .li_2:last-child {
         margin-bottom: 20px;
-    }
+   }
 }
-
 @media (min-width: 1281px) {
     .head_navi nav .a_2 {
         width: 270px;
@@ -266,15 +251,13 @@ header {
         color: #FFF;
         font-size: 17px;
         position: relative;
-    }
+   }
 }
-
 @media (min-width: 1281px) {
     .head_navi nav .a_2 span {
         position: relative;
-    }
+   }
 }
-
 @media (min-width: 1281px) {
     .head_navi nav .a_2::before {
         content: "";
@@ -286,35 +269,31 @@ header {
         left: 20px;
         background: url('https://www.tukorea.ac.kr/sites/tukorea/images/common/mainNav_icon_2.png') no-repeat;
         transform: scale(0);
-    }
+   }
 }
-
 @media (min-width: 1281px) {
     .head_navi nav .li_2:hover .a_2, .head_navi nav .a_2._active {
         background: #112755;
-    }
+   }
 }
-
 @media (min-width: 1281px) {
     .head_navi nav .li_2:hover .a_2::before, .head_navi nav .a_2._active::before {
         transform: scale(1);
         transition: all 0.5s cubic-bezier(0.2, 0, 0.3, 1);
-    }
+   }
 }
-
 @media (min-width: 1281px) {
     .head_navi nav .div_3 {
         position: relative;
         width: calc(100% - 245px);
-    }
+   }
 }
-
 @media (min-width: 1281px) {
     .head_navi nav .ul_3 {
         display: flex;
         flex-wrap: wrap;
         padding: 0 20px;
-    }
+   }
 }
 @media (min-width: 1281px) {
     .head_navi nav .a_3 {
@@ -324,9 +303,8 @@ header {
         font-weight: 300;
         position: relative;
         padding: 5px 20px 5px 13px;
-    }
+   }
 }
-
 @media (min-width: 1281px) {
     .head_navi nav .a_3::before {
         content: "";
@@ -337,9 +315,8 @@ header {
         position: absolute;
         top: calc(50% - 5px);
         right: 0;
-    }
+   }
 }
-
 .head_navi nav .a_3.new_win:after {
     content: "";
     display: inline-block;
@@ -351,22 +328,19 @@ header {
     filter: alpha(opacity = 50);
     opacity: 0.5;
 }
-
 @media (min-width: 1281px) {
     .head_navi nav .li_3:hover .a_3, .head_navi nav .a_3._active {
         color: #0d57a7;
         font-weight: 500;
-    }
+   }
 }
-
 .change_header{
     background: #ffffffe0;
 }
-
 @media (min-width: 1281px) {
     .head_navi nav .a_1_1 {
         color: #000000;
-    }
+   }
 }
 .head_logo .logo_c {
     display: none;

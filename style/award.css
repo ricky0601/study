@@ -1,188 +1,179 @@
 #visual .wrap_backImg > .backImg_area {
-    display: none;
-    height: 800px;
-    -webkit-background-size: cover;
-    background-size: cover;
+  display: none;
+  height: 800px;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 #visual .wrap_backImg > .backImg_area {
-    display: block;
-    background: url("https://iphak.tukorea.ac.kr/img/main_re/visual_03.jpg") center 0 no-repeat;
-    background-size: cover;
+  display: block;
+  background: url("https://iphak.tukorea.ac.kr/img/main_re/visual_03.jpg") center 0 no-repeat;
+  background-size: cover;
 }
 .center_align {
-    position: relative;
-    max-width: 1400px;
-    width: 1400px;
-    margin: 0 auto;
-    padding-top: 12em;
+  position: relative;
+  max-width: 1400px;
+  width: 1400px;
+  margin: 0 auto;
+  padding-top: 12em;
 }
-
 @media (min-width: 601px) and (max-width: 1024px){
-    .center_align {
-        max-width: 600px;
-        text-align: center;
-    }
+  .center_align {
+      max-width: 600px;
+      text-align: center;
+ }
 }
-
 #visual .wrap_backImg > .backImg_area h2 {
-    font-size: 3em;
-    padding-top: 1em;
-    color: white;
+  font-size: 3em;
+  padding-top: 1em;
+  color: white;
 }
-
 .wrap_year{
-    height: 100%;
+  height: 100%;
 }
 .wrap_year h2{
-    width: 1400px;
-    font-size: 48px;
-    border-bottom: 4px solid black;
-    margin: 0 auto;
+  width: 1400px;
+  font-size: 48px;
+  border-bottom: 4px solid black;
+  margin: 0 auto;
 }
-
 .wrap_year h2 :last-child{
-    text-align: right;
+  text-align: right;
 }
-
 .test{
-    width: 100%;
-    height: 500px;
-    background-color: rgb(180, 180, 180);
-}   
+  width: 100%;
+  height: 500px;
+  background-color: rgb(180, 180, 180);
+}
 #port, #port2{
-    position:relative;
-    width: 100%;
-    margin-top: 30vh;
+  position:relative;
+  width: 100%;
+  margin-top: 30vh;
 }
-
 #port2 .port__title{
-    text-align: right;
+  text-align: right;
 }
-  .port__inner {
-    padding: 16px;
-  }
-  .port__inner .port__title {
-    max-width: 1400px;
-    height: 5vw;
-    font-size: 4vw;
-    font-weight: 900;
-    line-height: 1.6;
-    font-family: var(--mainKor-font);
-    text-transform: uppercase;
-    color: var(--black100);
-    border-bottom: 4px  solid var(--black100);
-    margin: 0 auto;
-    margin-bottom: 16px;
-    text-indent: -0.26vw;
-  }
-  .port__inner .port__title em {
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 2;
-  }
-  .port__inner .port__wrap {
-    display: flex;
-    flex-wrap: wrap;
-    width: 7000px;
-  }
-  .port__inner .port__wrap .port__item {
-    width: 500px;
-    height: 70vh;
-    background-color: var(--subBg100);
-    padding: 2.5rem;
-    margin-right: 20px;
-  }
-  .port__inner .port__wrap .port__item.p1 {
-    background-color: var(--subBg100);
-  }
-  .port__inner .port__wrap .port__item.p2 {
-    background-color: var(--subBg200);
-  }
-  .port__inner .port__wrap .port__item.p3 {
-    background-color: var(--subBg300);
-  }
-  .port__inner .port__wrap .port__item.p4 {
-    background-color: var(--subBg400);
-  }
-  .port__inner .port__wrap .port__item.p5 {
-    background-color: var(--subBg500);
-  }
-  .port__inner .port__wrap .port__item.p6 {
-    background-color: var(--subBg100);
-  }
-  .port__inner .port__wrap .port__item.p7 {
-    background-color: var(--subBg200);
-  }
-  .port__inner .port__wrap .port__item.p8 {
-    background-color: var(--subBg300);
-  }
-  .port__inner .port__wrap .port__item.p9 {
-    background-color: var(--subBg400);
-  }
-  .port__inner .port__wrap .port__item.p10 {
-    background-color: var(--subBg500);
-  }
-  .port__inner .port__wrap .port__item .num {
-    font-size: 2rem;
-    font-family: var(--mainNum-font);
-  }
-  .port__inner .port__wrap .port__item .img {
-    display: block;
-    margin-top: -20px;
-    transition: margin-top 0.3s;
-  }
-  .port__inner .port__wrap .port__item .img img {
-    border-radius: 5px;
-    filter: saturate(0%);
-    transition: all 0.3s;
-  }
-  .port__inner .port__wrap .port__item .img:hover {
-    margin-top: 0;
-  }
-  .port__inner .port__wrap .port__item .img:hover img {
-    filter: saturate(100%);
-  }
-  .port__inner .port__wrap .port__item .title {
-    font-size: 1.1rem;
-    text-align: center;
-    padding: 0.8rem 0;
-    font-weight: 700;
-    color: var(--black100);
-    border-bottom: 2px solid var(--black100);
-    margin-bottom: 1rem;
-  }
-  .port__inner .port__wrap .port__item .desc {
-    font-size: 0.8em;
-  }
-  .port__inner .port__wrap .port__item .site {
-    border: 1px solid var(--black100);
-    display: block;
-    text-align: center;
-    padding: 0.625rem 1.5rem;
-    margin-top: 1.5rem;
-    transition: all 0.2s;
-  }
-  .port__inner .port__wrap .port__item .site:hover {
-    background-color: var(--black100);
-    color: var(--white);
-  }
-
-  :root{
-    --mainEng-font: "Montserrat";
-    --mainKor-font: "nanumSquareNeo";
-    --mainNum-font: "gmarket";
-
-    --mainBg-color: #A6E3EA;
-    --subBg100: #CBF2F5;
-    --subBg200: #DFFCFB;
-    --subBg300: #F2F9FB;
-    --subBg400: #C3F6F5;
-    --subBg500: #B0E5E3;
-  
-    --white: #fff;
-    --black: #000;
-    --black100: #2b2b2b;
-    --black200: #434343;
-    --black300: #686868;
-    --black400: #e0e0e0;
-  }
+.port__inner {
+  padding: 16px;
+}
+.port__inner .port__title {
+  max-width: 1400px;
+  height: 5vw;
+  font-size: 4vw;
+  font-weight: 900;
+  line-height: 1.6;
+  font-family: var(--mainKor-font);
+  text-transform: uppercase;
+  color: var(--black100);
+  border-bottom: 4px solid var(--black100);
+  margin: 0 auto;
+  margin-bottom: 16px;
+  text-indent: -0.26vw;
+}
+.port__inner .port__title em {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 2;
+}
+.port__inner .port__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 5200px;
+}
+.port__inner .port__wrap .port__item {
+  width: 500px;
+  height: 70vh;
+  background-color: var(--subBg100);
+  padding: 2.5rem;
+  margin-right: 20px;
+}
+.port__inner .port__wrap .port__item.p1 {
+  background-color: var(--subBg100);
+}
+.port__inner .port__wrap .port__item.p2 {
+  background-color: var(--subBg200);
+}
+.port__inner .port__wrap .port__item.p3 {
+  background-color: var(--subBg300);
+}
+.port__inner .port__wrap .port__item.p4 {
+  background-color: var(--subBg400);
+}
+.port__inner .port__wrap .port__item.p5 {
+  background-color: var(--subBg500);
+}
+.port__inner .port__wrap .port__item.p6 {
+  background-color: var(--subBg100);
+}
+.port__inner .port__wrap .port__item.p7 {
+  background-color: var(--subBg200);
+}
+.port__inner .port__wrap .port__item.p8 {
+  background-color: var(--subBg300);
+}
+.port__inner .port__wrap .port__item.p9 {
+  background-color: var(--subBg400);
+}
+.port__inner .port__wrap .port__item.p10 {
+  background-color: var(--subBg500);
+}
+.port__inner .port__wrap .port__item .num {
+  font-size: 2rem;
+  font-family: var(--mainNum-font);
+}
+.port__inner .port__wrap .port__item .img {
+  display: block;
+  margin-top: -20px;
+  transition: margin-top 0.3s;
+}
+.port__inner .port__wrap .port__item .img img {
+  border-radius: 5px;
+  filter: saturate(0%);
+  transition: all 0.3s;
+}
+.port__inner .port__wrap .port__item .img:hover {
+  margin-top: 0;
+}
+.port__inner .port__wrap .port__item .img:hover img {
+  filter: saturate(100%);
+}
+.port__inner .port__wrap .port__item .title {
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 0.8rem 0;
+  font-weight: 700;
+  color: var(--black100);
+  border-bottom: 2px solid var(--black100);
+  margin-bottom: 1rem;
+}
+.port__inner .port__wrap .port__item .desc {
+  font-size: 0.8em;
+}
+.port__inner .port__wrap .port__item .site {
+  border: 1px solid var(--black100);
+  display: block;
+  text-align: center;
+  padding: 0.625rem 1.5rem;
+  margin-top: 1.5rem;
+  transition: all 0.2s;
+}
+.port__inner .port__wrap .port__item .site:hover {
+  background-color: var(--black100);
+  color: var(--white);
+}
+:root{
+  --mainEng-font: "Montserrat";
+  --mainKor-font: "nanumSquareNeo";
+  --mainNum-font: "gmarket";
+  --mainBg-color: #A6E3EA;
+  --subBg100: #CBF2F5;
+  --subBg200: #DFFCFB;
+  --subBg300: #F2F9FB;
+  --subBg400: #C3F6F5;
+  --subBg500: #B0E5E3;
+  --white: #fff;
+  --black: #000;
+  --black100: #2b2b2b;
+  --black200: #434343;
+  --black300: #686868;
+  --black400: #e0e0e0;
+}

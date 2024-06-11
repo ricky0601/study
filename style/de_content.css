@@ -1,195 +1,165 @@
 ._contentBuilder {
-    position: relative;
+  position: relative;
 }
-
 article .title_wrap{
-    height: auto;
+  height: auto;
 }
-
 article .obj_title{
-    height: 100%;
-    overflow: hidden;
+  height: 100%;
+  overflow: hidden;
 }
-
 .wrap_visual{
-    height: 600px !important;
+  height: 600px !important;
 }
-
 .black_bg {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3);
-    position: absolute;
-    top: 0;
-    left: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-
 .bg_area{
-    position: relative;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-    opacity: 1;
+  position: relative;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  opacity: 1;
 }
 .slogan {
-    text-align: center;
-    color: #FFF;
-    word-break: keep-all;
-    line-height: 1.1;
+  text-align: center;
+  color: #FFF;
+  word-break: keep-all;
+  line-height: 1.1;
 }
-
 .slogan .p_1 {
-    font-size: 30px;
-    line-height: 1;
+  font-size: 30px;
+  line-height: 1;
 }
-
 .slogan .p_2 {
-    font-size: 50px;
-    font-family: 'Noto Bold';
-    padding-top: 20px;
+  font-size: 50px;
+  font-family: 'Noto Bold';
+  padding-top: 20px;
 }
-
 .slogan .p_3 {
-    font-size: 25px;
-    padding-top: 20px;
+  font-size: 25px;
+  padding-top: 20px;
 }
-
-
 #menu2014_obj37{
-    position: absolute;
-    top: 35% !important;
-    width: 1600px !important;
-    left: 50% !important;
-    margin-left: -800px !important;
+  position: absolute;
+  top: 35% !important;
+  width: 1600px !important;
+  left: 50% !important;
+  margin-left: -800px !important;
 }
-
-
 .wrap_list{
-    background-color: white;
+  background-color: white;
 }
-
 .flip-card .wrap_info{
-    text-align: left;
-    width: 300px;
+  text-align: left;
+  width: 300px;
 }
-
 .size_list{
-    max-width: 1400px;
-    margin: 0 auto;
-    padding-top: 60px;
-    padding-bottom: 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-
 .list_title{
-    font-size: 24px;
-    font-weight: bold;
+  font-size: 24px;
+  font-weight: bold;
 }
-
 .flip-card-back .list_title{
-    height: 20em;
-    overflow: hidden;
-    font-size: 18px;
-    font-weight: bold;
+  height: 20em;
+  overflow: hidden;
+  font-size: 18px;
+  font-weight: bold;
 }
-
 .list_author , .list_date{
   margin-top: 20px;
 }
-
 /* Flip-card */
-
 .flip-card {
-    background-color: transparent;
-    width: 386px;
-    height: 612px;
-    perspective: 1000px;
+  background-color: transparent;
+  width: 386px;
+  height: 612px;
+  perspective: 1000px;
 }
-
 .flip-card img{
-    margin: 24px;
-    border-radius: 30px;
+  margin: 24px;
+  border-radius: 30px;
 }
-
 .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
-  
 .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
-  
-  /* Position the front and back side */
+/* Position the front and back side */
 .flip-card-front, .flip-card-back {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    box-shadow: 0 0 20px 6px #dddddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-shadow: 0 0 20px 6px #dddddd;
 }
-  
 .flip-card-front {
-    background: url("https://www.tukorea.ac.kr/sites/biz/fnct/profl/biz_dblank/images/pro_bg.png") no-repeat 28% bottom;
-    padding-bottom: 40px;
-    
-    color: black;
-    border-radius: 30px;
+  background: url("https://www.tukorea.ac.kr/sites/biz/fnct/profl/biz_dblank/images/pro_bg.png") no-repeat 28% bottom;
+  padding-bottom: 40px;
+  color: black;
+  border-radius: 30px;
 }
-  
 .flip-card-back {
-    background-color: #008FD3;
-    color: white;
-    transform: rotateY(180deg);
-    border-radius: 30px;
-    justify-content: center
+  background-color: #008FD3;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 30px;
+  justify-content: center 
 }
-
 .flip-card-back .wrap_moreButton button{
-    cursor: pointer;
+  cursor: pointer;
 }
-
 /* More Button */
 .wrap_moreButton{
-    position: relative;
-    margin-top: 40px;
+  position: relative;
+  margin-top: 40px;
 }
-
 .wrap_moreButton .btn{
-    background: rgb(0,172,238);
-    background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
-    width: 240px;
-    height: 60px;
-    line-height: 42px;
-    padding: 0;
-    border: none;
-    color: white;
+  background: rgb(0,172,238);
+  background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+  width: 240px;
+  height: 60px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  color: white;
 }
 .btn span {
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
 }
-.btn:before,
-.btn:after {
+.btn:before, .btn:after {
   position: absolute;
   content: "";
   right: 0;
   top: 0;
-   background: white;
+  background: white;
   transition: all 0.3s ease;
 }
 .btn:before {
@@ -201,7 +171,7 @@ article .obj_title{
   height: 2px;
 }
 .btn:hover{
-   background: transparent;
+  background: transparent;
   box-shadow: none;
 }
 .btn:hover:before {
@@ -211,15 +181,14 @@ article .obj_title{
   width: 100%;
 }
 .btn span:hover{
-   color: white;
+  color: white;
 }
-.btn span:before,
-.btn span:after {
+.btn span:before, .btn span:after {
   position: absolute;
   content: "";
   left: 0;
   bottom: 0;
-   background: white;
+  background: white;
   transition: all 0.3s ease;
 }
 .btn span:before {
@@ -236,33 +205,30 @@ article .obj_title{
 .btn span:hover:after {
   width: 100%;
 }
-
-  /* Pagination */
-
-  .wrap_paginaition{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 102px;
-    margin-bottom: 87px;
-  }
-  .pagination {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .pagination a {
-    font-size: 20px;
-    color: black;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    transition: background-color .3s;
-  }
-  
-  .pagination a.p_active {
-    background-color: #008FD1;
-    color: white;
-  }
-  
-  .pagination a:hover:not(.p_active) {background-color: #ddd;}
+/* Pagination */
+.wrap_paginaition{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 102px;
+  margin-bottom: 87px;
+}
+.pagination {
+  display: flex;
+  gap: 20px;
+}
+.pagination a {
+  font-size: 20px;
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+.pagination a.p_active {
+  background-color: #008FD1;
+  color: white;
+}
+.pagination a:hover:not(.p_active) {
+ background-color: #ddd;
+}

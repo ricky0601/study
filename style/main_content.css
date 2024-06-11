@@ -40,7 +40,6 @@
     width: 2000px;
     display: block;
 }
-
 #multipleDiv_titleArea{
     height: auto;
     padding: 90px 0;
@@ -53,13 +52,11 @@
     position: absolute;
     top: 215px;
     background: #265aa6;
-
 }
 .multipleContentsDiv {
     max-width: 1400px;
     margin: 0 auto;
 }
-
 #multipleContentsDiv_titleArea{
     width: 100%;
     height: 100%;
@@ -81,26 +78,22 @@
     top: 118px;
     background: #265aa6;
 }
-
 .title_wrap {
     width: auto;
     height: auto;
     margin: 0px;
 }
-
 .title_under_wrap{
     display: flex;
     width: auto;
     height: 170px;
     margin: 0px;
 }
-
 .wrap_kTitle {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 .wrap_kTitle p {
     font-size: 35px;
     font-weight: 300;
@@ -110,7 +103,6 @@
     padding: 0 10px;
     word-break: keep-all;
 }
-
 .wrap_kTitle p span {
     font-weight: 700;
     color: #009FB6;
@@ -143,8 +135,8 @@
     font-weight: 300;
     color: #2759a5;
 }
-
-.wrap_calendar{padding: 90px 0;
+.wrap_calendar{
+    padding: 90px 0;
     background: url("https://www.tukorea.ac.kr/sites/tukorea/images/main/sns_bg.jpg") no-repeat center bottom;
     background-size: cover;
 }
@@ -160,15 +152,14 @@
     display: block;
     width: 240px;
 }
-
 .loop_cont {
     display: flex;
     overflow: hidden;
     height: 108px;
     align-items: center;
     margin-bottom: 116px;
-  }
-  .banner {
+}
+.banner {
     width: 240px;
     height: 60px;
     background-color: #009FB6;
@@ -179,18 +170,14 @@
     align-items: center;
     font-size: 20px;
     font-weight: bold;
-  }
-
-  .banner_list {
+}
+.banner_list {
     display: flex;
     animation: roll 40s linear infinite;
-  }
-
-  /* 첫 번째 배너 리스트가 끝나면 뒤에 바로 두 번째 배너 리스트가 붙도록 설정 */
-  .n1:last-child {
+}
+.n1:last-child {
     animation-delay: 20s;
-  }
-
+}
 .wrap_calendar_title{
     display: flex;
     justify-content: flex-start;
@@ -208,12 +195,10 @@
     bottom: 0;
     background: url("https://www.tukorea.ac.kr/sites/tukorea/fnct/schdulmain/tukorea_miniSche_fixed/images/calendar_bg_2.png");
 }
-
 .scheduleMain {
     width: 240px;
     position: relative;
 }
-
 .scheduleControl span {
     margin: 0 auto;
     line-height: 1;
@@ -225,39 +210,32 @@
     height: 185px;
     background: url("https://www.tukorea.ac.kr/sites/tukorea/fnct/schdulmain/tukorea_miniSche_fixed/images/calendar_bg_1.png") no-repeat center;
 }
-
 .scheduleControl span i.i_1 {
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
-
 .scheduleControl span i.i_2 {
     font-size: 25px;
     font-weight: 500;
     padding: 5px 0 15px 0;
 }
-
 .scheduleControl span i.i_3 {
     font-size: 40px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
-
 .scheduleControl span i {
     display: block;
     color: #FFF;
 }
-
 .scheduleScroll {
     width: calc(100% - 320px);
     position: relative;
 }
-
 .scheduleScroll {
     margin-top: 80px;
 }
-
 .scheduleScroll::before {
     content: "";
     display: block;
@@ -268,13 +246,11 @@
     left: 0;
     top: 3px;
 }
-
 .scheduleScroll ul {
     display: flex;
     justify-content: flex-start;
     position: relative;
 }
-
 .scheduleScroll li {
     text-align: center;
     width: 23%;
@@ -282,7 +258,6 @@
     line-height: 1.25;
     word-break: keep-all;
 }
-
 .scheduleScroll li::before {
     content: "";
     display: block;
@@ -292,7 +267,6 @@
     background: #95d3e6;
     margin: 0 auto;
 }
-
 .scheduleScroll li span {
     font-size: 18px;
     color: #FFF;
@@ -301,13 +275,11 @@
     display: block;
     padding: 20px 0 5px 0;
 }
-
 .scheduleScroll li strong {
     font-size: 18px;
     color: #95d3e6;
     font-weight: 400;
 }
-
 a.view_more_schedule {
     display: block;
     position: absolute;
@@ -318,7 +290,6 @@ a.view_more_schedule {
     position: relative;
     line-height: 1.5;
 }
-
 a.view_more_schedule span {
     color: #FFF;
     font-size: 14px;
@@ -333,30 +304,22 @@ a.view_more_schedule span::after {
     height: 8px;
     background: url("https://www.tukorea.ac.kr/sites/tukorea/fnct/schdulmain/tukorea_miniSche_fixed/images/more_w.png") right center no-repeat;
 }
-  /* 롤링 애니메이션 정의 */
-  @keyframes roll {
+/* 롤링 애니메이션 정의 */
+@keyframes roll {
     0% {
-      transform: translateX(0);
-    }
+        transform: translateX(0);
+   }
     100% {
-      transform: translateX(-100%);
-    }
-  }
-
-@media(min-width: 1025px){
-
+        transform: translateX(-100%);
+   }
 }
-
-@media (min-width: 601px) and (max-width: 1024px){ /* iPad Pro */
+@media (min-width: 601px) and (max-width: 1024px){
+   /* iPad Pro */
     #menu1004_obj842 {
         width: auto;
         height: 500px;
         margin: 0px;
         display: flex;
         justify-content: center;
-    }
-}
-
-@media(max-width: 414px){ /* iPhone 12 Pro */
-
+   }
 }

@@ -7,7 +7,8 @@ html, body {
     width: 100%;
     min-height: 100%;
     font-family: Pretendard;
-    /* font-family: 'Noto Sans KR', sans-serif; */
+   /* font-family: 'Noto Sans KR', sans-serif;
+    */
     font-weight: 300;
     line-height: 1.5;
     font-size: 18px;
@@ -48,10 +49,9 @@ li {
 i, em, address {
     font-style: normal;
 }
-
 /* arrow btn */
-#top-btn { 
-    display: none; 
+#top-btn {
+    display: none;
     position: fixed;
     bottom: 40px;
     right: 40px;
