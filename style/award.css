@@ -86,6 +86,19 @@
   padding: 2.5rem;
   margin-right: 20px;
 }
+
+
+@media (min-width: 601px) and (max-width: 1280px){
+  .port__inner .port__wrap .port__item {
+    width: 70vh;
+    height: 70vh;
+    background-color: var(--subBg100);
+    padding: 2.5rem;
+    padding-top: 1rem;
+    margin-right: 20px;
+  }
+}
+
 .port__inner .port__wrap .port__item.p1 {
   background-color: var(--subBg100);
 }
@@ -129,9 +142,29 @@
   border-radius: 5px;
   filter: saturate(0%);
   transition: all 0.3s;
+  height: 260px;
+  object-fit: cover;
 }
 .port__inner .port__wrap .port__item .img:hover {
   margin-top: 0;
+}
+@media (min-width: 601px) and (max-width: 1280px){
+  .port__inner .port__wrap .port__item .img {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+    transition: margin-top 0.3s;
+  }
+  .port__inner .port__wrap .port__item .img:hover {
+    margin-top: 0;
+  }
+  .port__inner .port__wrap .port__item .img img {
+    border-radius: 5px;
+    filter: saturate(0%);
+    transition: all 0.3s;
+    height: 180px;
+    object-fit: cover;
+  }
 }
 .port__inner .port__wrap .port__item .img:hover img {
   filter: saturate(100%);
@@ -146,7 +179,23 @@
   margin-bottom: 1rem;
 }
 .port__inner .port__wrap .port__item .desc {
+  text-align: center;
   font-size: 0.8em;
+}
+
+@media (min-width: 601px) and (max-width: 1280px){
+  .port__inner .port__wrap .port__item .title {
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0.8rem 0;
+    font-weight: 700;
+    color: var(--black100);
+    border-bottom: 2px solid var(--black100);
+    margin-bottom: 1rem;
+  }
+  .port__inner .port__wrap .port__item .desc {
+    font-size: 0.5em;
+  }
 }
 .port__inner .port__wrap .port__item .site {
   border: 1px solid var(--black100);
@@ -159,6 +208,21 @@
 .port__inner .port__wrap .port__item .site:hover {
   background-color: var(--black100);
   color: var(--white);
+}
+
+@media (min-width: 601px) and (max-width: 1280px){
+  .port__inner .port__wrap .port__item .site {
+    border: 1px solid var(--black100);
+    display: block;
+    text-align: center;
+    padding: 0.3rem 0.7rem;
+    margin-top: 0.7rem;
+    transition: all 0.2s;
+  }
+  .port__inner .port__wrap .port__item .site:hover {
+    background-color: var(--black100);
+    color: var(--white);
+  }
 }
 :root{
   --mainEng-font: "Montserrat";
